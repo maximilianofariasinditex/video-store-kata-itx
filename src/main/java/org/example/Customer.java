@@ -28,10 +28,8 @@ public class Customer {
 
       frequentRenterPoints += rental.getFrequentRenterPoints();
 
-      double thisAmount = rental.calculateAmount();
-      totalAmount += thisAmount;
-      result += "\t" + rental.getMovie().getTitle() + "\t"
-          + String.valueOf(thisAmount) + "\n";
+      totalAmount += rental.calculateAmount();
+      result += rental.getResult();
 
     }
 
